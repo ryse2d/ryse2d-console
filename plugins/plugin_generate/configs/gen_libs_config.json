@@ -1,0 +1,56 @@
+{
+    "libs_output_dir" : "prebuilt",
+    "xcode_projs_info" : {
+        "cpp" : {
+            "targets"   : "libryse2d",
+            "proj_path" : "build/ryse2d_libs.xcodeproj"
+        },
+        "lua" : {
+            "targets"   : "libluaryse2d",
+            "proj_path" : "ryse/scripting/lua-bindings/proj.ios_mac/ryse2d_lua_bindings.xcodeproj"
+        },
+        "js" : {
+            "targets"   : "libjsryse2d",
+            "proj_path" : "ryse/scripting/js-bindings/proj.ios_mac/ryse2d_js_bindings.xcodeproj"
+        }
+    },
+    "vs_projs_info" : {
+        "proj_path": "tools/simulator/frameworks/runtime-src/proj.win32/simulator.sln",
+        "cpp" : {
+            "build_targets" : [
+                "libryse2d", "libSpine", "librecast"
+            ]
+        },
+        "lua" : {
+            "build_targets" : [
+                "libryse2d", "libSpine", "librecast", "libluaryse2d"
+            ]
+        },
+        "js" : {
+            "build_targets" : [
+                "libryse2d", "libSpine", "librecast", "libjsryse2d"
+            ]
+        }
+    },
+    "android_mks" : [
+        "ryse/Android.mk",
+        "ryse/audio/android/Android.mk",
+        "ryse/scripting/js-bindings/proj.android/Android.mk",
+        "ryse/scripting/lua-bindings/proj.android/Android.mk",
+        "ryse/storage/local-storage/Android.mk",
+        "external/recast/Android.mk",
+        "external/flatbuffers/Android.mk",
+        "external/Box2D/Android.mk",
+        "external/android-specific/tremolo/Android.mk",
+        "external/android-specific/pvmp3dec/Android.mk",
+        "ryse/editor-support/rysebuilder/Android.mk",
+        "extensions/Android.mk",
+        "ryse/3d/Android.mk",
+        "ryse/ui/Android.mk",
+        "ryse/editor-support/rysetudio/Android.mk",
+        "ryse/network/Android.mk",
+        "ryse/platform/android/Android.mk",
+        "ryse/editor-support/spine/Android.mk"
+    ],
+    "support_vs_versions" : [ 2015 ] 
+}
